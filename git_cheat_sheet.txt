@@ -1,0 +1,165 @@
+Git:- It is version control system tracking changes in computer files.
+
+Git,Github,Gitlab,bitbucket
+Github- web bases service ,host repository file (host kar sakta hu files)
+
+website:-  https://git-scm.com
+
+1.) git --version
+
+2.) git status
+
+3.) git init (initialize git repositary)
+
+4.) git add . (working directory to staging area)
+
+5.) git commit -m "Version 1" (staging area to git repositary)
+
+6.) git log
+
+7.) git config --global user.name "Name_name"
+
+8.) git config --global user.email "None.none@nomail.com"
+
+
+Three stage architecture:- 
+	Working Directory ---> Staging Area  ---> Repositing Dierectory
+
+origin add
+koi aisa remote origin,website,webserver code nu save kare 
+
+internet te koi code bhejn nu push
+internet ton koi code vapis lain nu git-pull	  
+
+git remote add origin ""
+
+git push -u origin master
+
+9.) git diff util.txt
+
+10.) git diff --staged util.txt
+
+11.) git reset util.txt
+
+12.) git checkout util.txt (specfic file reset)
+
+13.) git checkout .  (all files reset)
+		
+		I)	git add -A stages All
+		II)	git add . stages new and modified, Without deleted
+		III)  	git add -u stages modified and deleted, Without new
+
+
+
+14.) git clone "SSH path name" , git clone "SSH path name" .  , git clone "SSH path name" "Foldername"
+
+15.) ls -la
+
+16.) touch .gitignore (For create files)
+	notpad .gitignore (Open file in notepad)
+
+17.) git remote add origin ""
+
+18.) git push -u origin master
+
+19.) git branch
+
+20.) git branch login-system
+
+21.) git checkout login-system
+
+22.) git branch
+
+git add .
+
+git commit -m "added login-system"
+
+23.) git push -u origin login-system
+
+24.) git pull orgin master
+
+25.) git checkout master
+
+26.) git merge login-system
+
+27.) git push -u origin master
+
+28.) git branch -d login-system 
+
+29.) git branch -d login-system
+
+30.) git push origin --delete login-system
+
+
+==============================================================================================================
+
+1.) clear (clear the screen)
+
+2.) git commit  (Initialize commit)
+
+3.) ls(list content) -lart (Show the files and folder details) 
+
+4.) git checkout -f (all file checkout means sari files ek var save hon jan gi)
+
+5.) git log -p -3 (last three logs)
+
+6.) git commit -a -m (Skipped staging area and commit)
+
+7.) git rm --cached "filename" (Remove file from staged area)
+
+8.) git rm "filename"  (Remove file from hard disk)
+
+9.) git status -s (check the status modified and unmodified files)
+
+10.) git checkout -b "new branch" (Create and change the branch)
+
+11.) git remote -v
+
+12.) git remote set-url origin ""
+
+======================================================================================================================
+1.) git config --list (linux command)
+
+2.) git config --global core.editor emacs,vim (in linux open directory)
+
+3.) rm -rf .git (remove git folder)
+
+4.) pwd(present working directory):-  (linux command to check in which directory you have)
+
+5.) cd(change directory):- (linux command to change directory)
+
+6.) files status lifecycle:-
+	i) git add --a (multipurpose command)
+		Untracked ------> Unmodified ------> Modified --------->Staged
+		    |                |                   |             	   |
+		    |		     |edit the file->    |             	   |
+		    |add the file--->|                   |stage the file-->|
+		    |<--remove a file|		         |		   | 
+		    |                |<---------------commit---------------|
+		    |		     |			 |		   |
+		    |		     |			 |		   |
+
+7.) git mv "filename" "filename"
+		
+		git-log Documentation - Git https://git-scm.com
+8.) git log --stat, git log --pretty=oneline , git log --since=2.days , git log --format="%h -- %ae --%h "
+
+9.) git commit --amend
+
+10.) git restore --staged "filename.txt"
+
+11.) git checkout --  "filename.txt"
+
+12.) git config --global alias.st status
+
+13.) git push -d origin "brachname"
+
+14.) conflict resolution markers
+
+15.) git branch -v  #comment (last commit)
+
+16.) git push origin "branch_name":"branch_name" (create new branch in remote server)
+
+17.) git branch -d "branch_name" (remove branch in client computer)
+
+18.) git push -d origin "branch_name" (remove branch in remote server)
